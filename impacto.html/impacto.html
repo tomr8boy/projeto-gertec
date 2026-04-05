@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Impacto Financeiro Gertec</title>
+    <style>
+        body { 
+            background-color: #121212; 
+            color: white; 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
+            margin: 0; 
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 { 
+            color: #00d4ff; 
+            font-size: 3rem; 
+            text-transform: uppercase; 
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+        }
+
+        .container { 
+            display: flex; 
+            gap: 20px; 
+            width: 100%; 
+            max-width: 1200px;
+            margin-bottom: 30px;
+        }
+
+        .card { 
+            background-color: #262626; 
+            flex: 1; 
+            padding: 30px; 
+            border-radius: 15px; 
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        /* Bordas coloridas como na sua foto */
+        .card.red { border-bottom: 8px solid #ff4d4d; }
+        .card.blue { border-bottom: 8px solid #00ff00; }
+        .card.green { border-bottom: 8px solid #00ff00; }
+
+        .label { color: #888; font-size: 1.1rem; margin-bottom: 15px; }
+        .value { font-size: 3rem; font-weight: bold; margin-bottom: 10px; }
+        
+        /* Cores dos valores */
+        .v-white { color: white; }
+        .v-green { color: #00ff00; }
+
+        .sub-label { color: #666; font-size: 1rem; }
+
+        /* Blocão de Economia Anual */
+        .annual-container {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #052616;
+            border: 3px solid #00ff00;
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .annual-label { font-size: 1.5rem; text-transform: uppercase; margin-bottom: 20px; }
+        .annual-value { font-size: 6rem; font-weight: bold; color: #00ff00; margin-bottom: 20px; }
+        .annual-footer { font-size: 1.2rem; color: #bdc3c7; }
+
+    </style>
+</head>
+<body>
+
+    <h1>PROJETO EFICIÊNCIA ENERGÉTICA</h1>
+
+    <div class="container">
+        <div class="card red">
+            <div class="label">Gasto Atual (100 Máquinas)</div>
+            <div class="value v-white">R$ 8.976</div>
+            <div class="sub-label">Operação 24h</div>
+        </div>
+
+        <div class="card blue">
+            <div class="label">Com Automação Tapo</div>
+            <div class="value v-green">R$ 3.036</div>
+            <div class="sub-label">Gestão Inteligente</div>
+        </div>
+
+        <div class="card green">
+            <div class="label">Economia Mensal</div>
+            <div class="value v-green">R$ 5.940</div>
+            <div class="sub-label">Recuperação de Lucro</div>
+        </div>
+    </div>
+
+    <div class="annual-container">
+        <div class="annual-label">ECONOMIA ANUAL ESTIMADA</div>
+        <div class="annual-value">R$ 71.280,00</div>
+        <div class="annual-footer">Fim do desperdício por erro humano ou ociosidade operacional.</div>
+    </div>
+
+</body>
+</html>
